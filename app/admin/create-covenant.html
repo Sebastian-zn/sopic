@@ -3,15 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="assets/css/app.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="../../../assets/css/app.css" />
+  <link rel="stylesheet" href="../../../assets/css/style.css" />
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/c5204bb4f1.js" crossorigin="anonymous"></script>
@@ -49,19 +48,19 @@
                 <div class="submenu-group-wrapper">
                   <ul class="submenu-group">
                     <li class="submenu-item">
-                      <a href="app/admin/create-user.html" class="submenu-link">Crear Usuario</a>
+                      <a href="create-user.html" class="submenu-link">Crear Usuario</a>
                     </li>
 
                     <li class="submenu-item">
-                      <a href="app/admin/edit-user.html" class="submenu-link">Modificar Usuario</a>
+                      <a href="edit-user.html" class="submenu-link">Modificar Usuario</a>
                     </li>
 
                     <li class="submenu-item">
-                      <a href="app/admin/consult-user.html" class="submenu-link">Consultar Usuario</a>
+                      <a href="consult-user.html" class="submenu-link">Consultar Usuario</a>
                     </li>
 
                     <li class="submenu-item">
-                      <a href="app/admin/change-userpass.html" class="submenu-link">Cambiar Contraseña</a>
+                      <a href="change-userpass.html" class="submenu-link">Cambiar Contraseña</a>
                     </li>
                   </ul>
                 </div>
@@ -77,15 +76,15 @@
                 <div class="submenu-group-wrapper">
                   <ul class="submenu-group">
                     <li class="submenu-item">
-                      <a href="app/admin/create-company.html" class="submenu-link">Crear Empresa</a>
+                      <a href="create-company.html" class="submenu-link">Crear Empresa</a>
                     </li>
 
                     <li class="submenu-item">
-                      <a href="app/admin/create-covenant.html" class="submenu-link">Crear Convenio</a>
+                      <a href="create-covenant.html" class="submenu-link">Crear Convenio</a>
                     </li>
 
                     <li class="submenu-item">
-                      <a href="app/admin/company-status.html" class="submenu-link">Habilitar o
+                      <a href="company-status.html" class="submenu-link">Habilitar o
                         inhabilitar empresas</a>
                     </li>
                   </ul>
@@ -103,7 +102,7 @@
                 <div class="submenu-group-wrapper">
                   <ul class="submenu-group">
                     <li class="submenu-item">
-                      <a href="app/admin/register-vehicle.html" class="submenu-link">Registrar Vehiculo</a>
+                      <a href="register-vehicle.html" class="submenu-link">Registrar Vehiculo</a>
                     </li>
                   </ul>
                 </div>
@@ -119,20 +118,20 @@
                 <div class="submenu-group-wrapper">
                   <ul class="submenu-group">
                     <li class="submenu-item">
-                      <a href="app/admin/print-result.html" class="submenu-link">Imprimir Resultado</a>
+                      <a href="print-result.html" class="submenu-link">Imprimir Resultado</a>
                     </li>
 
                     <li class="submenu-item">
-                      <a href="app/admin/print-plate.html" class="submenu-link">Imprimir por Placa</a>
+                      <a href="print-plate.html" class="submenu-link">Imprimir por Placa</a>
                     </li>
 
                     <li class="submenu-item">
-                      <a href="app/admin/production-report.html" class="submenu-link">Informe
+                      <a href="production-report.html" class="submenu-link">Informe
                         Produccion</a>
                     </li>
 
                     <li class="submenu-item">
-                      <a href="app/admin/daily-closure.html" class="submenu-link">Informe
+                      <a href="daily-closure.html" class="submenu-link">Informe
                         Cierre Diario</a>
                     </li>
                   </ul>
@@ -146,7 +145,7 @@
 
     <div class="content-wrapper container">
       <div class="page-heading">
-        <h3>Registrar Revision</h3>
+        <h3>Crear Convenio</h3>
       </div>
       <div class="page-content">
         <div class="row">
@@ -156,43 +155,62 @@
                 <div class="card-body">
                   <form class="form">
                     <div class="row">
-                      <div class="col-2">
+                      <div class="col-4">
                         <div class="form-group">
-                          <label for="plate">Placa</label>
-                          <input type="text" class="form-control" placeholder="Placa" name="plate" />
+                          <label for="company-name">Empresa</label>
+                          <input type="text" class="form-control" placeholder="Empresa" name="company" />
                         </div>
                       </div>
-                      <div class="row">
-                      </div>
-                      <div class="col-md-6 col-12">
+                      <div class="col-4">
                         <div class="form-group">
-                          <label for="fname-owner">Nombre Propietario</label>
-                          <input type="text" class="form-control" placeholder="Nombre Propietario" name="fname-owner" />
+                          <label for="address">Dirección</label>
+                          <input type="text" class="form-control" placeholder="Dirección" name="address" />
                         </div>
                       </div>
-                      <div class="col-md-6 col-12">
+                      <div class="col-4">
                         <div class="form-group">
-                          <label for="lname-owner">Apellido Propietario</label>
-                          <input type="text" class="form-control" placeholder="Apellido Propietario"
-                            name="lname-owner" />
+                          <label for="responsible">Responsable</label>
+                          <input type="text" class="form-control" placeholder="Responsable" name="responsible" />
                         </div>
                       </div>
-                      <div class="col-md-6 col-12">
-                        <div class="form-group">
-                          <label for="driver-name">Nombre Conductor</label>
-                          <input type="text" class="form-control" placeholder="Nombre Conductor" name="driver-name" />
-                        </div>
-                      </div>
-                      <div class="col-md-6 col-12">
-                        <div class="form-group">
-                          <label for="tel">Celular</label>
-                          <input type="text" class="form-control" name="tel" placeholder="Celular" />
-                        </div>
-                      </div>
-                      <div class="col-md-6 col-12">
+                      
+                      <div class="col-4">
                         <fieldset class="form-group">
-                          <label for="company">Empresa</label>
-                          <select name="company" class="form-select">
+                          <label for="city">Ciudad</label>
+                          <select name="city" class="form-select">
+                            <option value="0">Seleccionar...</option>
+                            <option value="1">Bogotá</option>
+                            <option value="2">Barranquilla</option>
+                            <option value="3">Cali</option>
+                            <option value="4">Medellín</option>
+                          </select>
+                        </fieldset>
+                      </div>
+
+                      <div class="col-4">
+                        <div class="form-group">
+                          <label for="nit">NIT</label>
+                          <input type="text" class="form-control" placeholder="NIT" name="nit" />
+                        </div>
+                      </div>
+
+                      <div class="col-4">
+                        <div class="form-group">
+                          <label for="date">Fecha</label>
+                          <input type="date" class="form-control" placeholder="Fecha" name="date" />
+                        </div>
+                      </div>
+
+                      <div class="col-4">
+                        <div class="form-group">
+                          <label for="comercial-name">Nombre Comercial</label>
+                          <input type="text" class="form-control" placeholder="Nombre Comercial" name="comercial-name" />
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <fieldset class="form-group">
+                          <label for="company-covenant">Empresa Convenio</label>
+                          <select name="company-covenant" class="form-select">
                             <option value="0">Seleccionar...</option>
                             <option value="1">Empresa 1</option>
                             <option value="2">Empresa 2</option>
@@ -200,26 +218,29 @@
                           </select>
                         </fieldset>
                       </div>
-                      <div class="col-md-6 col-12">
+                      <div class="col-2">
                         <div class="form-group">
-                          <label for="bill">No. Factura</label>
-                          <input type="text" class="form-control" name="bill" placeholder="No. Factura" />
+                          <label for="users-amount">Cantidad de Usuarios</label>
+                          <input type="text" class="form-control" placeholder="Cantidad de Usuarios" name="users-amount" />
                         </div>
                       </div>
-                      <div class="col-md-6 col-12">
-                        <fieldset class="form-group">
-                          <label for="checkType">Tipo Revision</label>
-                          <select name="checkType" class="form-select">
-                            <option value="0">Seleccionar...</option>
-                            <option value="1">Preventiva</option>
-                            <option value="2">Opcion 2</option>
-                            <option value="3">Opcion 3</option>
-                          </select>
-                        </fieldset>
+                      <div class="col-2">
+                        <div class="form-group">
+                          <label for="file">Cargar Imagen Convenio</label>
+                          <input type="file" class="form-control" name="file" />
+                        </div>
                       </div>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label for="observations">Observaciones</label>
+                          <textarea name="observations" class="form-control" rows="4"></textarea>
+                        </div>
+                      </div>
+
+                      <!-- Buttons -->
                       <div class="col-12 d-flex mt-2 justify-content-center">
                         <button type="submit" class="btn btn-primary me-1 mb-1">
-                          Registrar
+                          Guardar
                         </button>
                         <button type="reset" class="btn btn-light-secondary me-1 mb-1">
                           Limpiar
@@ -236,19 +257,24 @@
     </div>
   </div>
 
-  <footer class="footer layout-horizontal" style="background-color: cornflowerblue;">
-    <div>
-      <h1>Hola</h1>
-    </div>
-  </footer>
-
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
     integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
     crossorigin="anonymous"></script>
-  <script src="assets/js/horizontal-layout.js"></script>
+    <script src="assets/js/horizontal-layout.js"></script>
+
+  <script>
+    const consultBtn = document.querySelector('#consult-btn');
+
+    consultBtn.addEventListener('click', () => {
+      const table = document.querySelector('#table');
+
+      table.classList.remove('d-none');
+      table.classList.add('d-block');
+    });
+  </script>
 </body>
 
 </html>
